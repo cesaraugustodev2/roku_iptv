@@ -2,7 +2,6 @@
 
 Um reprodutor de IPTV leve e de alto desempenho para dispositivos Roku, desenvolvido para oferecer uma experiência fluida de streaming de TV ao vivo, filmes e séries. Este aplicativo suporta tanto listas **M3U** quanto a **API Xtream Codes**.
 
-![Roku IPTV](images/icon_focus_hd.png)
 
 ## ✨ Principais Funcionalidades
 
