@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="XtreamTask" extends="Task">
+    <interface>
+        <field id="server" type="string"/>
+        <field id="username" type="string"/>
+        <field id="password" type="string"/>
+        
+        <!-- Action can be: "all", "epg", "series_info" -->
+        <field id="action" type="string" value="all"/>
+        <field id="stream_id" type="string"/>
+        
+        <field id="content" type="node"/>
+        <field id="epg_data" type="node"/>
+        <field id="series_info" type="node"/>
+        
+        <field id="category_id" type="string"/>
+        <field id="stream_type" type="string"/>
+        <field id="category_content" type="node"/>
+        
+        <field id="search_query" type="string"/>
+        <field id="search_results" type="node"/>
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/XtreamTask/XtreamTask.brs"/>
+</component>

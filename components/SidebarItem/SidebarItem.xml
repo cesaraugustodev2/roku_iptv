@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="SidebarItem" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" onChange="onItemContentChange"/>
+        <field id="focusPercent" type="float" onChange="onFocusPercentChange"/>
+    </interface>
+
+    <children>
+        <!-- Background with rounded look (simulated) -->
+        <Rectangle id="background" width="260" height="80" color="0x1A1A1AFF" opacity="0" />
+        <Rectangle id="focusIndicator" width="6" height="40" translation="[0, 20]" color="0xEE1D23FF" opacity="0" />
+        
+        <Poster id="icon" width="36" height="36" translation="[35, 22]" loadDisplayMode="scaleToFit" />
+        
+        <Label id="title" translation="[90, 0]" width="150" height="80" vertAlign="center" color="0x888888FF">
+            <Font role="font" uri="pkg:/fonts/Roboto-Medium.ttf" size="26"/>
+        </Label>
+    </children>
+
+    <script type="text/brightscript">
+        <![CDATA[
+        sub init()
+            m.title = m.top.findNode("title")
+            m.icon = m.top.findNode("icon")
+            m.background = m.top.findNode("background")
+            m.focusIndicator = m.top.findNode("focusIndicator")
+        end sub
+
+        sub onItemContentChange()
+            content = m.top.itemContent
+            if content <> invalid
+                m.title.text = UCase(content.title)
+            end if
+        end sub
+
+        sub onFocusPercentChange()
+            p = m.top.focusPercent
+            ' Smooth transition of colors and opacity
+            m.background.opacity = p * 0.2
+            m.focusIndicator.opacity = p
+            if p > 0.5
+                m.title.color = "0xFFFFFFFF"
+            else
+                m.title.color = "0x888888FF"
+            end if
+            ' Scale icon slightly on focus
+            scale = 1.0 + (p * 0.1)
+            m.icon.scale = [scale, scale]
+        end sub
+        ]]>
+    </script>
+</component>

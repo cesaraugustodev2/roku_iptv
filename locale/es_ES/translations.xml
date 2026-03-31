@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en-US" target-language="es-ES" datatype="plaintext">
+        <body>
+            <trans-unit id="app_title">
+                <source>ROKU IPTV PRO</source>
+                <target>ROKU IPTV PRO</target>
+            </trans-unit>
+            <trans-unit id="select_format">
+                <source>IPTV CONFIGURATION</source>
+                <target>CONFIGURACIÓN IPTV</target>
+            </trans-unit>
+            <trans-unit id="choose_method">
+                <source>Please choose your provider type</source>
+                <target>Elija su tipo de proveedor</target>
+            </trans-unit>
+            <trans-unit id="m3u_url">
+                <source>M3U Playlist URL</source>
+                <target>URL de Lista M3U</target>
+            </trans-unit>
+            <trans-unit id="xtream_api">
+                <source>Xtream Codes API</source>
+                <target>API Xtream Codes</target>
+            </trans-unit>
+            <trans-unit id="loading_epg">
+                <source>Loading EPG...</source>
+                <target>Cargando EPG...</target>
+            </trans-unit>
+            <trans-unit id="no_epg">
+                <source>No EPG data available.</source>
+                <target>No hay datos de EPG disponibles.</target>
+            </trans-unit>
+            <trans-unit id="playback_error">
+                <source>Playback Error</source>
+                <target>Error de Reproducción</target>
+            </trans-unit>
+            <trans-unit id="next">
+                <source>Next</source>
+                <target>Siguiente</target>
+            </trans-unit>
+            <trans-unit id="connect">
+                <source>Connect</source>
+                <target>Conectar</target>
+            </trans-unit>
+            <trans-unit id="cancel">
+                <source>Cancel</source>
+                <target>Cancelar</target>
+            </trans-unit>
+            <trans-unit id="server_url">
+                <source>Server URL (http://host:port)</source>
+                <target>URL del Servidor (http://host:port)</target>
+            </trans-unit>
+            <trans-unit id="username">
+                <source>Username</source>
+                <target>Usuario</target>
+            </trans-unit>
+            <trans-unit id="password">
+                <source>Password</source>
+                <target>Contraseña</target>
+            </trans-unit>
+            <trans-unit id="loading_episodes">
+                <source>Loading episodes...</source>
+                <target>Cargando episodios...</target>
+            </trans-unit>
+            <trans-unit id="manage_playlists">
+                <source>Manage Playlists</source>
+                <target>Gestionar Listas</target>
+            </trans-unit>
+            <trans-unit id="add_playlist">
+                <source>Add New Playlist</source>
+                <target>Añadir Nueva Lista</target>
+            </trans-unit>
+            <trans-unit id="delete_playlist">
+                <source>Delete Playlist</source>
+                <target>Eliminar Lista</target>
+            </trans-unit>
+            <trans-unit id="playlist_name">
+                <source>Playlist Name</source>
+                <target>Nombre de la Lista</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

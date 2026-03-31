@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MainScene" extends="Scene" focusable="true">
+
+<script type="text/brightscript" uri="pkg:/components/MainScene/MainScene.brs"/>
+
+<children>
+    <!-- UI Layers -->
+    <Rectangle id="background" width="1920" height="1080" color="0x050505" />
+
+    <!-- Sidebar (Always on Left) -->
+    <Rectangle id="sidebar" width="300" height="1080" color="0x080808">
+        <Group id="logoContainer" translation="[40, 60]">
+            <Label text="Claro" color="0xEE1D23FF">
+                <Font role="font" uri="pkg:/fonts/Roboto-Bold.ttf" size="48"/>
+            </Label>
+            <Label text="tv+" translation="[130, 20]" color="0xFFFFFFFF">
+                <Font role="font" uri="pkg:/fonts/Roboto-Light.ttf" size="24"/>
+            </Label>
+        </Group>
+        
+        <MarkupGrid id="sidebarList" translation="[10, 250]" 
+            itemComponentName="SidebarItem"
+            itemSize="[280, 85]" 
+            itemSpacing="[0, 5]" 
+            columnWidths="[280]" 
+            numColumns="1" 
+            numRows="4"
+            drawFocusFeedback="false"
+            focusBitmapUri="" />
+            
+        <Label id="dashboardTime" translation="[40, 980]" color="0x888888FF">
+            <Font role="font" uri="pkg:/fonts/Roboto-Bold.ttf" size="32"/>
+        </Label>
+    </Rectangle>
+
+    <!-- Main View Area (Right of Sidebar) -->
+    <Group id="mainContainer" translation="[300, 0]">
+        
+        <!-- Home / Dashboard View (Obsolete) -->
+        <Group id="dashboard" visible="false">
+            <Group id="tilesContainer" translation="[50, 200]">
+                <Rectangle id="tile_live" width="400" height="600" color="0x000000" translation="[0, 0]">
+                    <Rectangle width="400" height="600" color="0xEE1D23" opacity="0.6" />
+                    <Label text="LIVE TV" translation="[0, 280]" width="400" horizAlign="center">
+                        <Font role="font" uri="pkg:/fonts/Roboto-Bold.ttf" size="40"/>
+                    </Label>
+                </Rectangle>
+                
+                <Rectangle id="tile_movies" width="550" height="290" color="0x1A1A1A" translation="[420, 0]">
+                    <Label text="MOVIES" translation="[0, 125]" width="550" horizAlign="center">
+                        <Font role="font" uri="pkg:/fonts/Roboto-Bold.ttf" size="36"/>
+                    </Label>
+                </Rectangle>
+
+                <Rectangle id="tile_series" width="550" height="290" color="0x1A1A1A" translation="[420, 310]">
+                    <Label text="SERIES" translation="[0, 125]" width="550" horizAlign="center">
+                        <Font role="font" uri="pkg:/fonts/Roboto-Bold.ttf" size="36"/>
+                    </Label>
+                </Rectangle>
+            </Group>
+        </Group>
+
+        <!-- Category / Channel Selection View -->
+        <Group id="categoryView" visible="true">
+            <!-- Content Area (Simple List) -->
+            <Group id="contentArea" translation="[50, 80]">
+                <LabelList id="list"
+                    itemSize="[1500, 90]" 
+                    color="0x888888FF" 
+                    focusedColor="0xFFFFFFFF"
+                    drawFocusFeedback="false">
+                    <Font role="font" uri="pkg:/fonts/Roboto-Bold.ttf" size="40"/>
+                </LabelList>
+            </Group>
+        </Group>
+    </Group>
+
+    <!-- Global Elements -->
+	<get_channel_list id="get_channel_list"/>
+	<XtreamTask id="XtreamTask"/>
+
+    <ProgressBar id="loadingIndicator" translation="[960, 540]" width="400" opacity="0.8" visible="false" />
+
+    <Rectangle id="videoFrame" width="1020" height="582" color="0x000000" translation="[860, 240]" visible="false" />
+    <Video id="Video" width="1920" height="1080" translation="[0, 0]" visible="false" bufferBehavior="default" switchingStrategy="minimum-bitrate" />
+
+</children>
+</component>

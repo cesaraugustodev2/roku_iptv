@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en-US" target-language="en-US" datatype="plaintext">
+        <body>
+            <trans-unit id="app_title">
+                <source>ROKU IPTV PRO</source>
+                <target>ROKU IPTV PRO</target>
+            </trans-unit>
+            <trans-unit id="select_format">
+                <source>IPTV CONFIGURATION</source>
+                <target>IPTV CONFIGURATION</target>
+            </trans-unit>
+            <trans-unit id="choose_method">
+                <source>Please choose your provider type</source>
+                <target>Please choose your provider type</target>
+            </trans-unit>
+            <trans-unit id="m3u_url">
+                <source>M3U Playlist URL</source>
+                <target>M3U Playlist URL</target>
+            </trans-unit>
+            <trans-unit id="live_tv">
+                <source>LIVE TV</source>
+                <target>LIVE TV</target>
+            </trans-unit>
+            <trans-unit id="movies">
+                <source>MOVIES</source>
+                <target>MOVIES</target>
+            </trans-unit>
+            <trans-unit id="series">
+                <source>SERIES</source>
+                <target>SERIES</target>
+            </trans-unit>
+            <trans-unit id="xtream_api">
+                <source>Xtream Codes API</source>
+                <target>Xtream Codes API</target>
+            </trans-unit>
+            <trans-unit id="loading_epg">
+                <source>Loading EPG...</source>
+                <target>Loading EPG...</target>
+            </trans-unit>
+            <trans-unit id="no_epg">
+                <source>No EPG data available.</source>
+                <target>No EPG data available.</target>
+            </trans-unit>
+            <trans-unit id="playback_error">
+                <source>Playback Error</source>
+                <target>Playback Error</target>
+            </trans-unit>
+            <trans-unit id="next">
+                <source>Next</source>
+                <target>Next</target>
+            </trans-unit>
+            <trans-unit id="connect">
+                <source>Connect</source>
+                <target>Connect</target>
+            </trans-unit>
+            <trans-unit id="cancel">
+                <source>Cancel</source>
+                <target>Cancel</target>
+            </trans-unit>
+            <trans-unit id="server_url">
+                <source>Server URL (http://host:port)</source>
+                <target>Server URL (http://host:port)</target>
+            </trans-unit>
+            <trans-unit id="username">
+                <source>Username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="password">
+                <source>Password</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="loading_episodes">
+                <source>Loading episodes...</source>
+                <target>Loading episodes...</target>
+            </trans-unit>
+            <trans-unit id="manage_playlists">
+                <source>Manage Playlists</source>
+                <target>Manage Playlists</target>
+            </trans-unit>
+            <trans-unit id="add_playlist">
+                <source>Add New Playlist</source>
+                <target>Add New Playlist</target>
+            </trans-unit>
+            <trans-unit id="delete_playlist">
+                <source>Delete Playlist</source>
+                <target>Delete Playlist</target>
+            </trans-unit>
+            <trans-unit id="playlist_name">
+                <source>Playlist Name</source>
+                <target>Playlist Name</target>
+            </trans-unit>
+            <trans-unit id="search_content">
+                <source>Search Content</source>
+                <target>Search Content</target>
+            </trans-unit>
+            <trans-unit id="search">
+                <source>Search</source>
+                <target>Search</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
