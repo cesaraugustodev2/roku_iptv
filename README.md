@@ -42,6 +42,7 @@ Você pode enviar uma URL de playlist diretamente do seu computador ou celular p
 
 ```bash
 curl -d "" "http://IP_DO_SEU_ROKU:8060/launch/dev?url=http://link-da-sua-lista.m3u"
+```
 
 ## 🎮 Controles do Controle Remoto
 
